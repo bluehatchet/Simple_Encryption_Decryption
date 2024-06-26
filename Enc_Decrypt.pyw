@@ -46,10 +46,8 @@ def select_file():
     file_path = filedialog.askopenfilename()
     if file_path:
         file_label.config(text=file_path)
-        return file_path
     else:
         file_label.config(text="No file selected")
-        return None
 
 def encrypt_selected_file():
     file_path = file_label.cget("text")
