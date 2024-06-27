@@ -84,20 +84,21 @@ if __name__ == "__main__":
     # Create the GUI
     root = Tk()
     root.title("File Encryptor/Decryptor")
+    root.configure(bg="black")
 
-    label = Label(root, text="Select files to encrypt or decrypt")
+    label = Label(root, text="Select files to encrypt or decrypt", bg="black", fg="white")
     label.pack(pady=10)
 
-    file_label = Label(root, text="No files selected", wraplength=300, justify="left")
+    file_label = Label(root, text="No files selected", wraplength=300, justify="left", bg="black", fg="white")
     file_label.pack(pady=5)
 
-    generate_key_button = Button(root, text="Generate Key", command=generate_key)
+    generate_key_button = Button(root, text="Generate Key", command=generate_key, bg="darkgray", fg="black")
     generate_key_button.pack(pady=5)
 
-    encrypt_button = Button(root, text="Encrypt Files", command=select_files_and_encrypt)
+    encrypt_button = Button(root, text="Encrypt Files", command=select_files_and_encrypt, bg="darkgray", fg="black")
     encrypt_button.pack(pady=5)
 
-    decrypt_button = Button(root, text="Decrypt Files", command=select_files_and_decrypt)
+    decrypt_button = Button(root, text="Decrypt Files", command=select_files_and_decrypt, bg="darkgray", fg="black")
     decrypt_button.pack(pady=5)
     
 ################################# Pixel_Art Icon #################################################################    
