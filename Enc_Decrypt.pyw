@@ -81,7 +81,7 @@ def select_files_and_decrypt():
         messagebox.showwarning("Warning", "No files selected for decryption")
 
 if __name__ == "__main__":
-    # Create the GUI
+    #A Simple GUI
     root = Tk()
     root.title("File Encryptor/Decryptor")
     root.configure(bg="black")
